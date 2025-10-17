@@ -7,26 +7,28 @@
  * @author      Torwald45
  * @link        https://github.com/Torwald45/wp-snippet-remove-users-sitemap-seo
  * @license     GPL-2.0-or-later
- * @version     1.0.0
+ * @version     2.0.0
  */
 
-add_filter( 'wp_sitemaps_add_provider', function( $provider, $name ) {
+add_filter('wp_sitemaps_add_provider', 'torwald45_nousers_filter_sitemap', 10, 2);
+
+function torwald45_nousers_filter_sitemap($provider, $name) {
     // Remove users sitemap (wp-sitemap-users-1.xml)
-    if ( 'users' === $name ) {
+    if ('users' === $name) {
         return false;
     }
     
     // Optional: uncomment lines below to also remove:
     
     // Remove taxonomies sitemap (categories, tags)
-    // if ( 'taxonomies' === $name ) {
+    // if ('taxonomies' === $name) {
     //     return false;
     // }
     
     // Remove posts sitemap (useful for non-blog sites)
-    // if ( 'posts' === $name ) {
+    // if ('posts' === $name) {
     //     return false;
     // }
     
     return $provider;
-}, 10, 2 );
+}
