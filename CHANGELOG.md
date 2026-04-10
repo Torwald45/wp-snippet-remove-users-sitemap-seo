@@ -21,10 +21,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [1.0.0] - 2025-10-15
 
 ### Added
-- Remove users sitemap from WordPress Core Sitemaps
+- Remove users sitemap from WP Core Sitemaps
 - wp_sitemaps_add_provider filter implementation
 - Optional filters for taxonomies and posts sitemaps (commented out)
 - Privacy improvement by hiding author usernames
 - SEO improvement by removing unnecessary sitemap
-- WordPress 5.5+ compatibility
+- WP 5.5+ compatibility
 - PHP 7.4+ compatibility

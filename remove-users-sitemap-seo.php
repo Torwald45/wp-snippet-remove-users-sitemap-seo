@@ -2,7 +2,7 @@
 /**
  * Remove Users Sitemap SEO
  * 
- * Remove users sitemap from WordPress Core Sitemaps to improve privacy and SEO.
+ * Remove users sitemap from WP Core Sitemaps to improve privacy and SEO.
  * 
  * @author      Torwald45
  * @link        https://github.com/Torwald45/wp-snippet-remove-users-sitemap-seo

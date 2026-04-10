@@ -1,18 +1,18 @@
 # WP Snippet: Remove Users Sitemap SEO
 
-Remove users sitemap (wp-sitemap-users-1.xml) from WordPress Core Sitemaps to improve privacy and SEO.
+Remove users sitemap (wp-sitemap-users-1.xml) from WP Core Sitemaps to improve privacy and SEO.
 
 ## Features
 
-- Remove users sitemap (wp-sitemap-users-1.xml) from WordPress Core Sitemaps
+- Remove users sitemap (wp-sitemap-users-1.xml) from WP Core Sitemaps
 - Prevent public exposure of author usernames
 - Optional filters to remove taxonomies and posts sitemaps (commented in code)
 - Lightweight (single filter hook)
-- Works with WordPress 5.5+ Core Sitemaps
+- Works with WP 5.5+ Core Sitemaps
 
 ## Requirements
 
-- WordPress 5.5 or higher (Core Sitemaps introduced in 5.5)
+- WP 5.5 or higher (Core Sitemaps introduced in 5.5)
 - PHP 7.4 or higher
 
 ## Installation
@@ -43,7 +43,7 @@ After installation, the users sitemap will be automatically removed. To verify:
 ## Technical Details
 
 ### Filter Hook
-- Hook: wp_sitemaps_add_provider (WordPress Core Sitemaps)
+- Hook: wp_sitemaps_add_provider (WP Core Sitemaps)
 - Priority: 10
 - Arguments: 2 (provider, name)
 
